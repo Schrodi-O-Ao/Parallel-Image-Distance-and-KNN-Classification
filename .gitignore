@@ -1,0 +1,87 @@
+# Build artifacts
+build/
+cmake-build-*/
+out/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.bak
+*.cmake
+!CMakeLists.txt
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python caches and local environments (benchmark plotting script)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Compiled Object files
+*.slo
+*.lo
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Dependencies
+.depend
+*.dep
+
+# OpenCV specific
+opencv/
+
+# Dataset files (large files should not be committed)
+data/*.bin
+data/*.tar.gz
+data/cifar-10-batches-py/
+
+# Generated documentation
+docs/*.pdf
+docs/*.html
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Test output
+test_results/
+coverage/
+
+# Backup files
+*.backup
+*~
+
+# CIFAR-10 binary dataset
+data/cifar-10-batches-bin/
+
+# Benchmark outputs (regenerated on demand)
+benchmarks/results/*
+!benchmarks/results/*.png
